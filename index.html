@@ -4,20 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Vanilla Memory!!!</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet">
-	<style type="text/css">
-		
-		html, body, .wrapper { margin: 0; height: 100%; width: 100%; }
-		.wrapper { position: relative; background-image: url(images/bg.jpg); background-position: center; background-size: cover; font-family: 'Roboto', sans-serif; color: #fff;}
-		.game {position: absolute; width: 100%; top: 50%; margin:auto; left: 0; right: 0; transform: translateY(-50%); text-align: center; max-width: 1024px; font-size: 22px;}
-		.game h1 {font-weight: 700; color: #fff; font-size: 60px; font-style: italic; 0 0 40px}
-		.btn { text-decoration: none; color: #fff; background-color: #C7260A; padding: 10px 25px; border-radius: 8px / 20px; font-size: 16px;}
-		.kickof-btn { display: none; max-width: 100px; margin: 40px auto 0}
-		.share {display: block; margin: 40px auto 0; max-width: 100px;}
-		.watch {font-size: 60px; font-style: italic;}
-		.tile-slot {display: inline-block; width: 16.6666%; padding: 10px; box-sizing: border-box;}
-		.tile-slot img {max-width: 100%; max-height: 110px; }
-		
-	</style>
+	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
@@ -35,19 +22,7 @@
 	<script src="js/requestHandler.js" type="text/javascript"></script>
 	<script src="js/templates.js" type="text/javascript"></script>
 	<script src="js/game.js" type="text/javascript"></script>
-	
-	<script type="text/javascript">
-	
-		var kickOffBtn = document.querySelector('.inicio-btn'),
-			initialUrl = 'https://services.sapo.pt/Codebits/listbadges';
-		
-		var callRequest = function() {
-			requestHandler('GET', initialUrl, game.kickoff)
-		}
-		
-		kickOffBtn.addEventListener('click', callRequest, false);
-	
-	</script>
+	<script src="js/start.js" type="text/javascript"></script>
 	
 </body>
 </html>
